@@ -1,0 +1,21 @@
+1
+name of the makefile :
+1.1
+一般来说将 Makefile 命名为 Makefile 或 makefile 都可以
+但很多源文件的名字是小写的，所以更多程序员采用的是 Makefile 的名字
+因为这样可以将 Makefile 居前显示。
+1.2
+如果将 Makefile 命为其它名字，比如 Makefile_demo，也是允许的，但使用的时候应该采用以下方式：
+make -f Makefile_demo
+2
+the basic rules of makefile
+2.1
+Makefile 的基本格式为：
+///////
+目标: 依赖
+(tab)规则
+//////////
+目标 --> 需要生成的目标文件
+依赖 --> 生成该目标所需的一些文件
+规则 --> 由依赖文件生成目标文件的手段
+tab --> 每条规则必须以 tab 开头，使用空格不行
